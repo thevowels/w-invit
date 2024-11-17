@@ -14,10 +14,17 @@ import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
+import Navbar from "../components/Navbar";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Wedding'
+};
 
 const Index = () => (
   <Container height="100vh">
-    <Hero />
+      <Navbar/>
+      <Hero />
     <Main>
       <Text color="text">
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{" "}
