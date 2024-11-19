@@ -16,47 +16,61 @@ import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Metadata } from 'next';
+import {Box} from "@chakra-ui/react";
 
 export const metadata: Metadata = {
     title: 'Wedding'
 };
 
 const Index = () => (
-  <Container height="100vh">
+  <Container>
+      <Box
+          w="100%"
+          bg="teal.500"
+          color="white"
+          p={3}
+          textAlign="center"
+      >
+          <Text>Welcome to our wedding website!</Text>
+      </Box>
+
       <Navbar/>
-      <Hero />
-    <Main>
-      <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{" "}
-        <Code>TypeScript</Code>.
-      </Text>
+      <Main>
+          <Hero/>
+          <section id="the couple">
+              <Box
+                  bg="red"
+                  w="100%"
+                  h={"100vh"}>
+                  <Text>The couple</Text>
+              </Box>
+          </section>
+          <section id="events">
+              <Box
+                  bg="blue"
+                  w="100%"
+                  h={"100vh"}>
+                  <Text>Events</Text>
+              </Box>
 
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
-    </Main>
+          </section>
+          <section id="love story">
+              <Box
+                  w="100%"
+                  h={"100vh"}>
+                  <Text>Love story</Text>
+              </Box>
 
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
+          </section>
+
+
+      </Main>
+
+      {/*<DarkModeSwitch />*/}
+    {/*  <Footer>*/}
+    {/*      <Text>Powered with Chakra UI</Text>*/}
+    {/*</Footer>*/}
+    {/*<CTA />*/}
   </Container>
 );
 
