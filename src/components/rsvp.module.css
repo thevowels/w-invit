@@ -1,0 +1,38 @@
+.rsvp{
+    display: flex;
+}
+.rsvp > div{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rsvp-form{
+    width: 100%;
+}
+
+.rsvp-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+@media (max-width: 1000px){
+    .rsvp{
+        flex-direction: column;
+    }
+    .rsvp-form{
+        order:2;
+    }
+    .rsvp-content{
+        order:1;
+    }
+    .topleftBanner{
+        display: none;
+    }
+}
+

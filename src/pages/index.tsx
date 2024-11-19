@@ -17,6 +17,7 @@ import { Footer } from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Metadata } from 'next';
 import {Box} from "@chakra-ui/react";
+import RSVP from "../components/RSVP";
 
 export const metadata: Metadata = {
     title: 'Wedding'
@@ -62,15 +63,27 @@ const Index = () => (
               </Box>
 
           </section>
+          <section id="photos">
+              <Box
+                  w="100%"
+                  h={"100vh"}>
+                  <Text>Photos</Text>
+              </Box>
+
+          </section>
+          <section id="rsvp">
+              <RSVP/>
+
+          </section>
 
 
       </Main>
 
       {/*<DarkModeSwitch />*/}
-    {/*  <Footer>*/}
-    {/*      <Text>Powered with Chakra UI</Text>*/}
-    {/*</Footer>*/}
-    {/*<CTA />*/}
+      {/*  <Footer>*/}
+      {/*      <Text>Powered with Chakra UI</Text>*/}
+      {/*</Footer>*/}
+      {/*<CTA />*/}
   </Container>
 );
 

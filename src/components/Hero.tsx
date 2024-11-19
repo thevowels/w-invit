@@ -16,7 +16,7 @@ export const Hero = () => (
               <Text border={"3px solid"} px={5} mb={8} py={2} fontSize={"37px"} fontWeight={500}  fontFamily={"'Kaushan Script', 'serif'"} color="rgb(180, 106, 72)"> Louise & Wilson </Text>
               <Text display={"block"} fontFamily={"'Kaushan Script', 'serif'"} fontSize={"37px"} mb={2}> Together with Their Families</Text>
               <Text maxWidth={"27rem"} fontFamily={"Poppins"}>Request The Honor of Your Presence at Their Wedding Ceremony and Reception July 11, 2026</Text>
-           <Image width={"100px"} src={"images/divider-arrow.svg"} mt={10}></Image>
+              <Image width={"100px"} src={"images/divider-arrow.svg"} mt={10}></Image>
 
       </div>
     </div>
