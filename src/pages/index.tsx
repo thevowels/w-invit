@@ -24,7 +24,9 @@ export const metadata: Metadata = {
 };
 
 const Index = () => (
-  <Container>
+  <Container width={["100%", "100%", "100%"]}   maxWidth="100vw"
+             overflowX="hidden"
+  >
       <Box
           w="100%"
           bg="teal.500"

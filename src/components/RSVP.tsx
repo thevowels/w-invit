@@ -49,7 +49,7 @@ export default function RSVP() {
              <Image className={styles.banner} width={"150px"} src={"images/shape-wave-middle-right.svg"} position={"absolute"} right={0} top={"50%"}transform="translateY(-50%)"
              />
             <VStack spacing={4}>
-                <Box alignItems={"center"} alignContent={"center"} textAlign={"center"} display={"flex"} flexDirection={"column"} mb={8}>
+                <Box  alignItems={"center"} alignContent={"center"} textAlign={"center"} display={"flex"} flexDirection={"column"} mb={8}>
                     <Text fontSize={"40px"} fontWeight={"thin"}  fontFamily={"Kaushan Script"}>
                         Come and Celebrate with Us
                     </Text>
@@ -60,7 +60,7 @@ export default function RSVP() {
                 </Box>
                 <div className={styles.rsvp}>
                     <div className={styles['rsvp-form']} >
-                        <Box width={"486px"}>
+                        <Box width={"360px"}>
                             <form onSubmit={handleSubmit}>
                                 <VStack spacing={4}>
                                     <Box bg={"rgb(180, 106, 72)"} width={"100%"}>
@@ -108,12 +108,12 @@ export default function RSVP() {
                             </form>
                         </Box>
                     </div>
-                    <div className={styles['rsvp-content']} >
+                    <Box className={styles['rsvp-content']} maxWidth={"100vw"} >
                         <Text color={"rgb(33, 37, 41)"} fontFamily={"'Kaushan Script', 'cursive'"} fontSize={"28px"} mb={4}>We Can't Wait to See You!</Text>
                         <Image width={"60px"} src={"images/divider-heart.svg"}/>
                         <Text fontFamily={"Poppins"} color={"rgba(33, 37, 41, 0.75)"}>Saturday, July 11th, 2026</Text>
                         <Text fontFamily={"Poppins"} color={"rgba(33, 37, 41, 0.75)"} maxWidth={"27rem"}>St. Patrick's Catholic Church, 619 10th Street NW, Washington, DC 20001, United States</Text>
-                    </div>
+                    </Box>
                 </div>
             </VStack>
 
