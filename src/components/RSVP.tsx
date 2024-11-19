@@ -45,8 +45,8 @@ export default function RSVP() {
 
         return(
          <Box position={"relative"}>
-             <Image className={styles.topleftBanner} width={"300px"} position={"absolute"} src={"images/shape-wave-top-left-2.svg"}  />
-             <Image width={"150px"} src={"images/shape-wave-middle-right.svg"} position={"absolute"} right={0} top={"50%"}         transform="translateY(-50%)"
+             <Image className={styles.banner} width={"300px"} position={"absolute"} src={"images/shape-wave-top-left-2.svg"}  />
+             <Image className={styles.banner} width={"150px"} src={"images/shape-wave-middle-right.svg"} position={"absolute"} right={0} top={"50%"}transform="translateY(-50%)"
              />
             <VStack spacing={4}>
                 <Box alignItems={"center"} alignContent={"center"} textAlign={"center"} display={"flex"} flexDirection={"column"} mb={8}>
